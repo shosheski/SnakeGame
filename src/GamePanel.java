@@ -123,11 +123,11 @@ public class GamePanel extends JPanel implements ActionListener {
         //check collision head -> left border
         if(x[0] < 0) running = false;
         //check collision head -> right border
-        if(x[0] > SCREEN_WIDTH) running = false;
+        if(x[0] >= SCREEN_WIDTH) running = false;
         //check collision head -> top border
         if(y[0] < 0) running = false;
         //check collision head -> bottom border
-        if(y[0] > SCREEN_HEIGHT) running = false;
+        if(y[0] >= SCREEN_HEIGHT) running = false;
 
         if(!running) timer.stop();
     }
